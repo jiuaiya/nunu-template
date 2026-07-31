@@ -9,11 +9,14 @@ The minimum Go toolchain is the patched `1.26.5` release.
 Pin the CLI version and point it at this Git repository:
 
 ```bash
-go run github.com/go-nunu/nunu@v1.1.3 new my-service -r <template-git-url>
+go run github.com/go-nunu/nunu@v1.1.3 new my-service \
+  -r git@github.com:jiuaiya/nunu-template.git
 cd my-service
 cp .env.example .env.local
 make check
 ```
+
+Canonical template repository: `git@github.com:jiuaiya/nunu-template.git`.
 
 Environment files are examples only; the service reads process environment variables and never loads `.env` implicitly.
 
