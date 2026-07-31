@@ -1,0 +1,10 @@
+.DS_Store
+.env
+*.local
+*.log
+
+/bin/
+/server
+/coverage.out
+/coverage.html
+/storage/
